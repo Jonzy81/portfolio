@@ -167,3 +167,26 @@ header ul li {
     font-weight: normal;
     font-style: normal;
 }
+
+/* footer */
+.footer-links {
+
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.get-in-touch {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.btn-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
