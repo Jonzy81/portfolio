@@ -38,7 +38,6 @@
         transition: all 0.2s ease-in-out;
     }
 
-
     .menu li {
         margin-top: 30px;
     }
@@ -57,7 +56,6 @@
     #check:checked~.menu {
         right: 0;
     }
-
 }
 
 /* Header */
@@ -77,8 +75,6 @@ a {
     text-decoration: none;
     list-style-type: none;
     color: black;
-
-
 }
 
 header {
@@ -103,17 +99,8 @@ header ul li {
     margin-right: 20px;
     display: flex;
     align-items: center;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
 }
-
-/* @media(max-width:1150px) {
-    header ul li {
-        display: flex;
-        margin-right: 4px;
-        text-align: left;
-        font-size: 1.4vw;
-    }
-} */
 
 @media (max-width:1000px) {
     header ul li {
@@ -126,7 +113,8 @@ header ul li {
 
 .nav-bar li a {
     border-radius: 3px;
-    padding: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .nav-bar li a:hover {
@@ -146,8 +134,6 @@ header ul li {
 .active {
     color: #f0f0f0;
     background-color: black;
-    border-radius: 3px;
-    padding: 4px;
     box-sizing: border-box;
 }
 
@@ -165,7 +151,6 @@ header ul li {
 
     overflow: hidden;
 }
-
 
 @font-face {
     font-family: 'Couture';
@@ -210,4 +195,70 @@ footer {
     justify-content: flex-end;
     gap: 1.1rem;
     margin-bottom: 30px;
+}
+
+/* Modal */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #f0f0f0;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+:target {
+    display: block;
+}
+
+#close {
+    color: black;
+    position: absolute;
+    top: 2.8px;
+    right: 3px;
+    z-index: 50;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* About */
+.about-img {
+
+    width: 40%;
+    height: auto;
+}
+
+.image-container-about {
+    display: flex;
+    justify-content: end;
+    padding-right: 10rem;
+    float: right;
 }
