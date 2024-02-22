@@ -103,18 +103,24 @@ header ul li {
     margin-right: 20px;
     display: flex;
     align-items: center;
-    font-size: 1.8vmin;
-
+    font-size: 0.9vw;
 }
 
-@media (max-width:1000px) {
+/* @media(max-width:1150px) {
     header ul li {
-
         display: flex;
         margin-right: 4px;
         text-align: left;
+        font-size: 1.4vw;
+    }
+} */
 
-        font-size: 0.5rem;
+@media (max-width:1000px) {
+    header ul li {
+        display: flex;
+        margin-right: 4px;
+        text-align: left;
+        font-size: 0.8vw;
     }
 }
 
@@ -133,7 +139,7 @@ header ul li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5vmin;
+    font-size: 3rem;
     white-space: nowrap;
 }
 
@@ -146,17 +152,20 @@ header ul li {
 }
 
 /* main */
-.img-container {
-    background-size: cover;
-    width: 100%;
-    overflow: hidden;
-    height: 80rem;
-}
-
-.img-container img {
+.first-image {
+    object-fit: cover;
     width: 100%;
     display: block;
+    height: 1280px;
+    object-position: right top;
 }
+
+.img-container {
+    width: 100%;
+
+    overflow: hidden;
+}
+
 
 @font-face {
     font-family: 'Couture';
@@ -169,24 +178,36 @@ header ul li {
 }
 
 /* footer */
-.footer-links {
 
+footer {
+
+
+    background-color: #f0f0f0;
+
+}
+
+.footer-links {
+    display: flex;
     justify-content: flex-end;
+    flex-direction: column;
     flex-wrap: wrap;
-    float: right;
+    /*  float: right; */
     margin-right: 20px;
 
 }
 
 .get-in-touch {
+    align-self: flex-end;
     list-style-type: none;
     padding: 0;
-    display: flex;
+    margin-top: 10px;
+
 }
 
 .btn-links {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: flex-end;
+    gap: 1.1rem;
+    margin-bottom: 30px;
 }
