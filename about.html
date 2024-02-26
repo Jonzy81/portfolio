@@ -4,88 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>JonnyTouma</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
-        <ul class="nav-bar">
-            <li><a href="./about.html" class="active">About</a></li>
-            <li><a href="./career.html">Cereer</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-
-        </ul>
-        <a href="./index.html" class="home">Jonny Touma</a>
+        <nav>
+            <ul class="nav-bar">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="./about.html" class="active">About</a></li>
+                    <li><a href="./career.html">Cereer</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fa-solid fa-circle-xmark"
+                            style="color: #000000;"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars" style="color: #000000;"></i></label>
+            </ul>
+            <a href="./index.html" class="home">Jonny Touma</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <h1>A new start</h1>
-            <hr>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus officiis voluptate sit vero excepturi
-                dolor! Eligendi sequi earum nobis dolorem iusto, officia sint eaque illum, pariatur odit reprehenderit
-                maiores nemo!</p>
-            <hr>
-            <div class="image-container-about">
-                <img src="Jonny_skåne.jpeg" class="about-img" alt="profile picture">
-            </div>
-        </section>
+        <div class="row">
+            <h1>
+                <div class="span-margin">
+                    <span></span>
+                    <span>Paving the Path to Professional Renewal,</span>
+                    <span>as new start, In the digital world! </span>
+                </div>
+                <div class="stripe"></div>
+            </h1>
+            <div class="image-text-about">
+                <p class="interview">
+                    I come from stockholm, and been fortunate to be nurtured in an
+                    environment
+                    filled with art,
+                    music, and creativity. This has shaped my personal development in life, leading me to always strive
+                    for
+                    passion. I am driven by my curiosity and motivation to seek
+                    new
+                    knowledge; for
+                    this reason, I set my sights on new challenges and embarked on my new adventure.
 
+                    After 20 years in the construction industry as an electrician, I have today begun my new journey as
+                    a
+                    full-stack
+                    developer specializing in .NET. My goal is to continue my development in a digital world, where my
+                    skills, strengths,
+                    and above all, my knowledge from past experiences, will come in handy. A digital world where I can
+                    think
+                    outside the box
+                    and grow alongside the challenges it presents.
+                </p>
+                <img src="/Jonny_skåne.jpeg" class="about-image" alt="jonny picture">
 
-        <div class="container">
-            <div class="row">
-                <div class="flex-col">
-                    <h2>
-                        I can help you with
-                        <span class="animate-dot">.</span>
-                        <span class="animate-dot">.</span>
-                        <span class="animate-dot">.</span>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="flex-col">
-                    <h5>01</h5>
-                    <div class="stripe"></div>
-                    <h4>Backend</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, repellat porro omnis sapiente,
-                        nobis architecto eius soluta error quae amet necessitatibus modi beatae libero. Provident minima
-                        mollitia corrupti consequuntur eaque!</p>
-                </div>
-                <div class="flex-col">
-                    <h5>01</h5>
-                    <div class="stripe"></div>
-                    <h4>Backend</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, repellat porro omnis sapiente,
-                        nobis architecto
-                        eius soluta error quae amet necessitatibus modi beatae libero. Provident minima mollitia
-                        corrupti consequuntur
-                        eaque!</p>
-                </div>
-                <div class="flex-col">
-                    <h5>01</h5>
-                    <div class="stripe"></div>
-                    <h4>Backend</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, repellat porro omnis sapiente,
-                        nobis architecto
-                        eius soluta error quae amet necessitatibus modi beatae libero. Provident minima mollitia
-                        corrupti consequuntur
-                        eaque!</p>
-                </div>
             </div>
         </div>
+        <article class="container">
+            <h2>My studies <span class="animate-dot">.</span><span class="animate-dot">.</span><span
+                    class="animate-dot">.</span>
+            </h2>
+            <div class="flex-container">
+                <div class="container-studies">
+                    <h3>01.</h3>
+                    <div class="stripe"></div>
+                    <h4>backend.</h4>
+                    <p>With focus on the .NET framework, particularly C#, proficient in Azure, SQL, MySQL, NoSQL and
+                        ASP.NET. I've developed a variety of custom APIs, reflecting a
+                        commitment to
+                        innovative digital
+                        solutions.</p>
+                </div>
+                <div class="container-studies">
+                    <h3>02.</h3>
+                    <div class="stripe"></div>
+                    <h4>frontend.</h4>
+                    <p>Experienced with JavaScript, HTML, CSS, SCSS, React, Astro, and NodeJS. I
+                        build scalable
+                        applications that fit seamlessly with design, emphasizing innovation and user-centric
+                        UX/UI design.</p>
+                </div>
+                <div class="container-studies">
+                    <h3>03.</h3>
+                    <div class="stripe"></div>
+                    <h4>full package.</h4>
+                    <p>From concept to implementation, I deliver complete websites that stand out. With a keen eye for
+                        design and robust
+                        development skills, I craft exceptional projects that leave a lasting impression.</p>
+                </div>
+
+            </div>
+            <div class="stripe"></div>
+        </article>
+
+
     </main>
     <footer>
-        <p>Get in touch</p>
-        <ul>
-            <li>Linked in</li>
-            <li>Email</li>
-            <li>Github</li>
-            <li>Phonenumber</li>
-        </ul>
+        <div class="footer-links">
+
+            <li class="get-in-touch">Get in touch</li>
+
+            <ul class="btn-links">
+                <li><a href="https://se.linkedin.com/in/jonny-touma-93201014b" class="bi bi-linkedin"></a></li>
+                <li><a href=mailto:"jonnytouma@gmail.com" class="bi bi-envelope-at-fill"></a></li>
+                <li><a href="https://github.com/Jonzy81" class="bi bi-github"></a></li>
+                <li>
+                    <a href="#modalPhone" class="bi bi-telephone-plus-fill"></a>
+                    <div id="modalPhone" class="modal">
+                        <div class="modal-content">
+                            <a href="#close" class="fa-solid fa-circle-xmark" id="close"></a>
+                            <a href="tel:+460707866632"><i class="bi bi-telephone-plus-fill">: +(46)0707866632</i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </footer>
+
 
 </body>
 
