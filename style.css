@@ -83,10 +83,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .menu {
     display: flex;
+
 }
 
 a {
@@ -96,12 +98,11 @@ a {
 }
 
 header {
-
     display: flex;
     align-items: center;
     padding: 20px;
     position: relative;
-
+    margin-top: 1rem;
     background-color: #f0f0f0;
 }
 
@@ -118,7 +119,6 @@ header ul li {
     display: flex;
     align-items: center;
     font-size: 0.8vw;
-    margin-top: 1rem;
 }
 
 .nav-bar li a {
