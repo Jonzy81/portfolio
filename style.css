@@ -103,6 +103,7 @@ header {
     padding: 20px;
     position: relative;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: #f0f0f0;
 }
 
@@ -161,18 +162,43 @@ header ul li {
 
 /* main */
 
-
-
 .first-image {
     width: 100%;
-    height: 800px;
+    height: auto;
     object-fit: cover;
     object-position: bottom right;
+    z-index: 1;
+    position: relative;
 }
 
 .img-container {
+    position: relative;
     width: 100%;
     overflow: hidden;
+
+}
+
+/* Image animation */
+.button-image {
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.animation-image {
+    display: none;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom right;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
 }
 
 @font-face {
