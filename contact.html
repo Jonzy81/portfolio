@@ -20,7 +20,7 @@
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./career.html">Cereer</a></li>
+                    <li><a href="./career.html">Career</a></li>
                     <li><a href="./portfolio.html">Portfolio</a></li>
                     <li><a href="./contact.html" class="active">Contact</a></li>
                     <label for="check" class="close-menu"><i class="fa-solid fa-circle-xmark"
@@ -30,12 +30,37 @@
             </ul>
             <a href="./index.html" class="home">Jonny Touma</a>
         </nav>
-
-
     </header>
     <main>
+        <article class="background-animation">
+            <span>NOW!</span>
+            <span>Get</span>
+            <span>In</span>
+            <span>Touch</span>
+        </article>
+        <script>
+            function App() {
+                var spans;
+                var currentSpan = 0;
+
+                this.init = function () {
+                    spans = document.querySelectorAll('.background-animation span');
+                    setInterval(animateSubliminalSpans, 1000);
+                }
+
+                var animateSubliminalSpans = function () {
+                    spans[currentSpan].className = "";
+                    currentSpan++;
+                    currentSpan %= spans.length;
+                    spans[currentSpan].className = "fade";
+                }
+            }
+
+            var app = new App();
+            app.init();
+        </script>
     </main>
-    <footer>
+    <footer class="fixed-footer">
         <div class="footer-links">
 
             <li class="get-in-touch">Get in touch</li>
