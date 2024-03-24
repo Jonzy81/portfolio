@@ -115,7 +115,7 @@ header ul {
 }
 
 header ul li {
-    margin-right: 20px;
+    margin-right: 1.2rem;
     display: flex;
     align-items: center;
     font-size: 0.8vw;
@@ -147,6 +147,17 @@ header ul li {
     background-color: black;
     box-sizing: border-box;
 }
+
+@media(max-width:1000px) {
+    header ul li {
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 1vw;
+    }
+}
+
+
 
 /* main */
 
@@ -182,10 +193,11 @@ footer {
 
 .footer-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 20px;
+    align-content: center;
 }
 
 .get-in-touch {
@@ -570,9 +582,10 @@ h3 {
 /* card modal */
 
 .popup {
+    margin-top: 3rem;
     display: none;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f0f0f0;
@@ -581,8 +594,15 @@ h3 {
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.4);
     z-index: 9999;
     text-align: center;
-    max-width: 350px;
+    max-width: 20rem;
     border: .1px solid #333333b0;
+
+}
+
+@media(max-width:650px) {
+    .popup {
+        max-width: 80%;
+    }
 }
 
 .popup-head {
@@ -594,7 +614,7 @@ h3 {
 
 .popup-head h2 {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .popup p {
@@ -771,7 +791,7 @@ h3 {
     font-family: helvetica;
     line-height: 180px;
     font-weight: 900;
-    font-size: 200px;
+    font-size: 15vw;
     height: 200px;
     position: fixed;
     color: #bbbbc2;
