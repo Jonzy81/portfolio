@@ -1,17 +1,23 @@
-document.getElementById("animation-button").addEventListener("click", function () {
+document.getElementById("jonny-trigger").addEventListener("click", function (event) {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Trigger the animation function
+    triggerAnimation();
+});
+
+function triggerAnimation() {
     var images = [
         "KebFirstAnimation1.png",
         "KebFirstAnimation2.png",
         "KebFirstAnimation3.png"
     ];
     var animationImages = document.querySelectorAll(".animation-image");
-    var buttonImage = document.querySelector(".button-image")
-
-    buttonImage.style.display = "none"
 
     animationImages.forEach(function (img) {
         img.style.display = "block";
     });
+
     var currentIndex = 0;
 
     function changeImage() {
@@ -22,14 +28,13 @@ document.getElementById("animation-button").addEventListener("click", function (
             clearInterval(intervalId);
             setTimeout(function () {
                 document.querySelector(".first-image").src = "imageJonnyKeb.jpg";
-                buttonImage.style.display = "block";
-            }, 1000)
+            }, 1000);
         }
     }
 
     var intervalId = setInterval(changeImage, 1000);
+}
 
-});
 
 var passKey = "kärlek";
 var currentKeyIndex = 0;
