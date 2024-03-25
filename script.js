@@ -48,7 +48,7 @@ document.addEventListener('keypress', function (event) {
         if (currentKeyIndex === passKey.length) {
             console.log("easteregg triggered");
             document.querySelector(".first-image").src = "IMG_0652.jpg";
-
+            document.querySelector(".first-image").classList.add("swapped-image");
             currentKeyIndex = 0;
         }
 
